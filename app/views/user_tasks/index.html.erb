@@ -1,15 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<h1>User Tasks</h1>
+<div class="continer-fluid">
+	<div class="row">
+		<h1>User Tasks</h1>
+	</div>
 
-<%= link_to 'New User Task', new_user_task_path, remote: true, class: 'btn btn-default' %>
+	<div class="row">
+		<div class="col-md-3">
+			<%= link_to 'New User Task', new_user_task_path, remote: true, class: 'btn btn-default' %>
 
-<div id="task-form"></div>
+			<div id="task-form"></div>
 
-<div id="tasks">
-  <%= render @user_tasks %>
+			<div id="tasks">
+			  <%= render @user_tasks %>
+		 </div>
+	</div>
+
+	<br>
 </div>
-
-<br>
 
 
